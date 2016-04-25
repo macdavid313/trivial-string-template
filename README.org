@@ -72,7 +72,7 @@ Just a wrapper around template class.
 (tmpl :who tim) ;; => "tim likes &what"
 #+end_src
 
-* TODO [66%]
+* TODO TO DO List [66%]
   - [X] Provide a more detailed APIs documenatation.
   - [X] More tests.
   - [ ] Improvements.
