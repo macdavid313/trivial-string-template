@@ -4,7 +4,7 @@ sudo: required
 env:
   global:
     - PATH=~/.roswell/bin:$PATH
-    - ROSWELL_BRANCH=v0.0.5.58
+    - ROSWELL_BRANCH=release
     - ROSWELL_INSTALL_DIR=$HOME/.roswell
     - COVERAGE_EXCLUDE=t
   matrix:
