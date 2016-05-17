@@ -1,12 +1,12 @@
 #|
   This file is a part of trivial-string-template project.
-  Copyright (c) 2016 David Guru (david_guru@gty.org.in)
+  Copyright (c) 2016 David Gu (david_guru@gty.org.in)
 |#
 
 #|
   A trivial string template library, inspired by Python's string.Template
 
-  Author: David Guru (david_guru@gty.org.in)
+  Author: David Gu (david_guru@gty.org.in)
 |#
 
 (in-package :cl-user)

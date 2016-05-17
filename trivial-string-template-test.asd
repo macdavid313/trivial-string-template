@@ -1,6 +1,6 @@
 #|
   This file is a part of trivial-string-template project.
-  Copyright (c) 2016 David Guru (david_guru@gty.org.in)
+  Copyright (c) 2016 David Gu (david_guru@gty.org.in)
 |#
 
 (in-package :cl-user)
@@ -9,7 +9,7 @@
 (in-package :trivial-string-template-test-asd)
 
 (defsystem trivial-string-template-test
-  :author "David Guru"
+  :author "David Gu"
   :license "MIT"
   :depends-on (:alexandria
                :trivial-string-template
