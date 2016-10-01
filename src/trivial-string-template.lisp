@@ -84,11 +84,14 @@ It will be reused over and over again.")
 (defun make-tokenizer-function (compiled-re separators)
   "Given a compiled regular expression, and a list of separators characters, produce a predicating function that
 when given a character, it tells whether it's a separator."
-  (compile nil `(lambda (char)
-                  (or 
-                   ,@(dolist (sep separators) `(char= char ,sep))
-                   (not #+allegro (regexp:match-re ,compiled-re (string char))
-                        #-allegro (cl-ppcre:scan-to-strings ,compiled-re (string char)))))))
+  (lambda (char)
+    (or 
+     (block %separators%
+       (dolist (sep separators t)
+         (when (not (char= char sep))
+           (return-from %separators% nil))))
+     (not #+allegro (regexp:match-re compiled-re (string char))
+          #-allegro (cl-ppcre:scan-to-strings compiled-re (string char))))))
 
 (defun make-tokenizer
     (&key (regex "[a-zA-Z0-9-]") (separators (list #\Space #\Newline #\Tab)))
