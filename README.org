@@ -1,7 +1,7 @@
 #+TITLE: Trivial-String-Template
 #+AUTHOR: David Gu
 #+DATE: <2016-04-11 Mon>
-#+EMAIL: david_guru@gty.org.in
+#+EMAIL: macdavid313@gmail.com
 
 #+begin_html
 <a href="https://travis-ci.org/macdavid313/trivial-string-template"><img src="https://travis-ci.org/macdavid313/trivial-string-template.svg?branch=master" alt="Travis-CI Status" /></a>
@@ -79,7 +79,7 @@ Just a wrapper around template class.
 
 * Author
 
-- David Gu (david_guru@gty.org.in)
+- David Gu (macdavid313@gmail.com)
 
 * License
 
