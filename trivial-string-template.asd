@@ -19,7 +19,7 @@
 
 (defsystem trivial-string-template
   :version "0.1"
-  :author "David Gu"
+  :author "Tianyu Gu"
   :license "MIT"
   :depends-on (#:alexandria
                #:proc-parse
